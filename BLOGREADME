@@ -1,0 +1,53 @@
+# Laravel Blog Application
+
+This is a simple Laravel blog application with user authentication and role-based access control. 
+
+## Features:
+- **Admin**: Can access all pages, including categories management and user management.
+- **User**: Can only access the dashboard and manage their own blog posts.
+- **Role-based Access**: Only active users can log in.
+
+## Requirements:
+- PHP 7.4 or higher
+- Composer
+- MySQL or equivalent database
+- Laravel 8 or higher
+
+## Installation Steps:
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/yourprojectname.git
+    cd yourprojectname
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    composer install
+    ```
+
+3. **Set up the environment file:**
+    ```bash
+    cp .env.example .env
+    ```
+
+4. **Set up your database:**
+    - Create a new database in **phpMyAdmin** or your preferred MySQL interface.
+   - in pypmyadmin uplaod exmpleapp_db
+
+
+
+8. **Access the application:**
+    Open your browser and go to `http://127.0.0.1:8000`.
+
+---
+
+## How It Works:
+
+### Authentication:
+- **Default Authentication**: Uses Laravel's built-in `Auth` system with `Register` and `Login` routes.
+- Only **active** users can log in. Inactive users will be redirected to a message saying "Account is inactive".
+
+### Roles:
+- Admins can access all pages, including categories management, user management, and the admin dashboard.
+- Users can only access their dashboard where they can manage their own blog posts.
