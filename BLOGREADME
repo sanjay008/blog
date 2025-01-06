@@ -16,8 +16,7 @@ This is a simple Laravel blog application with user authentication and role-base
 ## Installation Steps:
 
 1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/yourprojectname.git
+    ```bashhttps://github.com/gunjanpatl/blog.git
     cd yourprojectname
     ```
 
